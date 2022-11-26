@@ -9,9 +9,10 @@ const routes = [
     component: Home,
   },
   {
-    path: "/produto",
+    path: "/produto/:id",
     name: "Produto",
     component: Produto,
+    props: true, // Parametros serão passados via propriedade
   },
 ];
 

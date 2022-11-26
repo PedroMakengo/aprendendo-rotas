@@ -1,6 +1,24 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <div class="produto">
-    <h2>Produto</h2>
+    <h2>Tela Produto</h2>
+    <span
+      >Código do Produto: <strong>{{ id }}</strong></span
+    >
+    <br />
+    <button @click="irHome">Ir para home</button>
   </div>
 </template>
+
+<script>
+export default {
+  // eslint-disable-next-line vue/multi-word-component-names
+  name: "Produto",
+  props: ["id"],
+  methods: {
+    irHome() {
+      this.$router.push("/");
+    },
+  },
+};
+</script>
