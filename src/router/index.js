@@ -27,11 +27,21 @@ const routes = [
       },
     ],
   },
+  {
+    path: "/:pathMatch(.*)*",
+    redirect: "/",
+  },
 ];
 
 const router = createRouter({
   history: createWebHashHistory(),
   routes,
+});
+
+// Criando um interceptador global
+router.beforeEach((to, from, next) => {
+  console.log("Chamando antes das rotas");
+  next();
 });
 
 export default router;
