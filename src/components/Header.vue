@@ -12,11 +12,6 @@
             >Produto 10</router-link
           >
         </li>
-        <li>
-          <router-link to="/produto/19" active-class="ativo"
-            >Produto 19</router-link
-          >
-        </li>
       </ul>
     </nav>
   </header>
