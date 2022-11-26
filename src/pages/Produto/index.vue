@@ -4,6 +4,7 @@
     <h2>Tela Produto</h2>
     <span>Código do Produto:</span>
     <br />
+    <router-view />
     <button @click="irHome">Ir para home</button>
   </div>
 </template>
