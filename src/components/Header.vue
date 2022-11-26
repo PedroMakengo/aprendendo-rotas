@@ -5,10 +5,10 @@
       <h1>Sujeito Programador</h1>
       <ul>
         <li>
-          <router-link to="/">Home</router-link>
+          <router-link to="/" active-class="ativo" exact>Home</router-link>
         </li>
         <li>
-          <router-link to="/produto">Produto</router-link>
+          <router-link to="/produto" active-class="ativo">Produto</router-link>
         </li>
       </ul>
     </nav>
@@ -48,5 +48,9 @@ header nav ul a {
   font-size: 1rem;
   text-decoration: none;
   color: white;
+}
+
+header nav ul .ativo {
+  border-top: 1px solid white;
 }
 </style>
