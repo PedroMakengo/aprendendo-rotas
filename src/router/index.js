@@ -1,6 +1,6 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import Home from "../pages/Home.vue";
-import Produto from "../pages/Produto";
+import Produto from "../pages/Produto/index.vue";
 import MeusProdutos from "../pages/Produto/MeusProdutos.vue";
 
 const routes = [
@@ -13,13 +13,11 @@ const routes = [
     path: "/produto",
     name: "Produto",
     component: Produto,
-    props: true, // Parametros serão passados via propriedade
   },
   {
     path: "/meus-produtos",
-    name: "Produto",
+    name: "MeusProdutos",
     component: MeusProdutos,
-    props: true,
   },
 ];
 

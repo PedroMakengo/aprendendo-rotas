@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <div id="meus-produtos" class="produto"></div>
+  <div id="detalhe-produto" class="detalhe-produto"></div>
 </template>
 
 <script>
