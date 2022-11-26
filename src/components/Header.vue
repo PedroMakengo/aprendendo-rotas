@@ -8,9 +8,7 @@
           <router-link to="/" active-class="ativo" exact>Home</router-link>
         </li>
         <li>
-          <router-link to="/produto/10" active-class="ativo"
-            >Produto 10</router-link
-          >
+          <router-link to="/produto" active-class="ativo">Produto</router-link>
         </li>
       </ul>
     </nav>

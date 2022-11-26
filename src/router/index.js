@@ -10,13 +10,13 @@ const routes = [
     component: Home,
   },
   {
-    path: "/produto/:id",
+    path: "/produto",
     name: "Produto",
     component: Produto,
     props: true, // Parametros serão passados via propriedade
   },
   {
-    path: "/produto/:id",
+    path: "/meus-produtos",
     name: "Produto",
     component: MeusProdutos,
     props: true,

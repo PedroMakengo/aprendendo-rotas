@@ -2,9 +2,7 @@
 <template>
   <div class="produto">
     <h2>Tela Produto</h2>
-    <span
-      >Código do Produto: <strong>{{ id }}</strong></span
-    >
+    <span>Código do Produto:</span>
     <br />
     <button @click="irHome">Ir para home</button>
   </div>
@@ -14,7 +12,6 @@
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Produto",
-  props: ["id"],
   methods: {
     irHome() {
       this.$router.push("/");
