@@ -2,9 +2,11 @@
 <template>
   <div class="produto">
     <h2>Tela Produto</h2>
-    <span>Código do Produto:</span>
+    <span>Código do Produto</span>
     <br />
-    <router-view />
+    <div class="content-view">
+      <router-view />
+    </div>
     <button @click="irHome">Ir para home</button>
   </div>
 </template>
@@ -20,3 +22,5 @@ export default {
   },
 };
 </script>
+
+<style scoped></style>
