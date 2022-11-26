@@ -5,6 +5,21 @@
     <span
       >Código do Produto: <strong>{{ id }}</strong>
     </span>
+    <br />
+    <!-- <router-link :to="`/produto/${id}/editar`"
+      >Editar produto {{ id }}</router-link
+    > -->
+
+    <!-- Pegando os dados por meio de paramtros -->
+    <router-link
+      :to="{
+        name: 'editar',
+        params: { id },
+        query: { name: 'Sujeito Programador', qtd: 12 },
+      }"
+    >
+      Editar produto {{ id }}
+    </router-link>
   </div>
 </template>
 
