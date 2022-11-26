@@ -1,11 +1,11 @@
 import { createApp } from "vue";
-import "@/assets/global.css";
 import App from "./App.vue";
+import router from "./router";
 
-createApp(App).mount("#app");
+createApp(App).use(router).mount("#app");
 
 // Tipos de navegação
 // Modelo de Hash e History
 
-// Hash seusit.com/#/contato
-// History seusit.com/contato
+// Hash seusite.com/#/contato
+// History seusite.com/contato

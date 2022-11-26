@@ -1,6 +1,8 @@
 <template>
   <div class="app">
-    <h2>Olá Mundo</h2>
+    <h2>Aprendendo Rotas</h2>
+
+    <router-view />
   </div>
 </template>
 
